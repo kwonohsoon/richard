@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>문중 산소 위치도 - 사진과 기록</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+<h2><a href="index.html" style="text-decoration: none; color: inherit;">🗻 석남골 문중 산소 위치도</a></h2>
+    <p><center>지도에서 클릭하면 묘소 사진과 메모가 좌측에 표시됩니다.</center></p>
+  </header>
+
+  <div class="container">
+    <!-- 좌측: 사진 영역 -->
+    <div id="info-box">
+     <img id="photo" src="images/main.gif" alt="묘소 사진" />
+      <p id="sangso-name"></p>
+      <p id="date"></p>
+      <p id="bae"></p>
+      <p id="note"></p>
+    </div>
+
+    <!-- 우측: 지도 -->
+    <div id="map"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
